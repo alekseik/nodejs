@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	form(method='post', action='/article/add', enctype="multipart/form-data")
+		p
+		input(type='text', placeholder='Title', name='title', id='title')
+		p
+		input(type="file", name='image')
+		p
+		textarea(placeholder='Text', name='text', id='text')
+		p
+		input(type='text', placeholder='Author', name='author', id='author')
+		p
+		button(type='submit') Add
+	script(src='/javascripts/main.js')
